@@ -16,6 +16,9 @@
             <h1>藥用植物測驗系統</h1>
             <p>請選擇您要進行的測驗項目</p>
             <div class="menu-buttons">
+                <button id="btn-flashcard" class="primary-btn" style="background-color: #8b5cf6;">
+                    <span class="icon">📇</span>植物單字卡學習 (全題庫)
+                </button>
                 <button id="btn-dictation" class="primary-btn">
                     <span class="icon">📝</span>科別拉丁名默寫 (隨機15題)
                 </button>
@@ -51,6 +54,40 @@
             </div>
             <div class="actions">
                 <button id="submit-dictation" class="success-btn">送出試卷</button>
+            </div>
+        </div>
+
+        <!-- Flashcard Screen -->
+        <div id="flashcard-screen" class="screen glass-panel">
+            <div class="screen-header">
+                <h2>植物單字卡</h2>
+                <div class="info">
+                    <span id="flashcard-progress" class="badge">第 1 / 62 張</span>
+                </div>
+                <button class="back-btn header-btn">返回主選單</button>
+            </div>
+            
+            <div class="flashcard-container" id="flashcard-container">
+                <div class="flashcard-inner" id="flashcard-inner">
+                    <div class="flashcard-front">
+                        <img id="flashcard-image" src="" alt="植物圖片" />
+                        <div id="flashcard-placeholder">圖片加載中...</div>
+                        <div class="flashcard-instruction">點擊卡片翻面看答案 🔄</div>
+                    </div>
+                    <div class="flashcard-back">
+                        <h3 id="flashcard-name" class="flashcard-name">植物名稱</h3>
+                        <div class="review-hint-box" style="margin-top: 1rem;">
+                            <h4>辨識重點</h4>
+                            <p id="flashcard-hint" class="flashcard-hint-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flashcard-controls">
+                <button id="flashcard-prev" class="primary-btn btn-sm">⬅️ 上一張</button>
+                <button id="flashcard-shuffle" class="success-btn btn-sm">🔀 重新洗牌</button>
+                <button id="flashcard-next" class="primary-btn btn-sm">下一張 ➡️</button>
             </div>
         </div>
 

@@ -707,11 +707,13 @@ const plantDictionary = [
 // 元素選取
 const screens = document.querySelectorAll('.screen');
 const homeScreen = document.getElementById('home-screen');
+const flashcardScreen = document.getElementById('flashcard-screen');
 const dictationScreen = document.getElementById('dictation-screen');
 const identificationScreen = document.getElementById('identification-screen');
 const resultsScreen = document.getElementById('results-screen');
 
 // 首頁按鈕
+const btnFlashcard = document.getElementById('btn-flashcard');
 const btnDictation = document.getElementById('btn-dictation');
 const btnIdentification = document.getElementById('btn-identification');
 const backBtns = document.querySelectorAll('.back-btn');
@@ -784,6 +786,105 @@ submitDictationBtn.addEventListener('click', () => {
     });
     
     showResults(correctCount, 15, results, 'dictation');
+});
+
+/* =========================================
+   模式 1.5: 植物單字卡學習 (Flashcards)
+========================================= */
+const flashcardProgress = document.getElementById('flashcard-progress');
+const flashcardContainer = document.getElementById('flashcard-container');
+const flashcardImage = document.getElementById('flashcard-image');
+const flashcardPlaceholder = document.getElementById('flashcard-placeholder');
+const flashcardName = document.getElementById('flashcard-name');
+const flashcardHint = document.getElementById('flashcard-hint');
+const flashcardPrev = document.getElementById('flashcard-prev');
+const flashcardNext = document.getElementById('flashcard-next');
+const flashcardShuffle = document.getElementById('flashcard-shuffle');
+
+let flashcardList = [];
+let flashcardIndex = 0;
+
+btnFlashcard.addEventListener('click', () => {
+    startFlashcards(true);
+});
+
+function startFlashcards(shuffle = true) {
+    // 複製題庫
+    flashcardList = [...plantDictionary];
+    if (shuffle) {
+        flashcardList.sort(() => 0.5 - Math.random());
+    }
+    flashcardIndex = 0;
+    
+    // 確保卡片未翻轉
+    flashcardContainer.classList.remove('flipped');
+    
+    showScreen(flashcardScreen);
+    loadFlashcard();
+}
+
+function loadFlashcard() {
+    if (flashcardList.length === 0) return;
+    
+    const activePlant = flashcardList[flashcardIndex];
+    flashcardProgress.textContent = `第 ${flashcardIndex + 1} / ${flashcardList.length} 張`;
+    
+    // 每次切換都強制翻回正面
+    flashcardContainer.classList.remove('flipped');
+    
+    // 處理正面圖片
+    flashcardImage.style.display = 'none';
+    flashcardPlaceholder.style.display = 'flex';
+    
+    const imgUrl = `images/${activePlant.answer}.png`;
+    flashcardImage.src = imgUrl;
+    flashcardImage.onload = () => {
+        flashcardImage.style.display = 'block';
+        flashcardPlaceholder.style.display = 'none';
+    };
+    flashcardImage.onerror = () => {
+        flashcardImage.style.display = 'none';
+        flashcardPlaceholder.style.display = 'flex';
+    };
+    
+    // 處理背面文字
+    flashcardName.textContent = activePlant.answer;
+    const parentHintBox = flashcardHint.parentElement;
+    if (activePlant.hint && activePlant.hint.trim() !== '') {
+        flashcardHint.innerHTML = activePlant.hint.replace(/\n/g, '<br>');
+        parentHintBox.style.display = 'block';
+    } else {
+        parentHintBox.style.display = 'none';
+    }
+    
+    // 更新按鈕狀態
+    flashcardPrev.disabled = (flashcardIndex === 0);
+    flashcardNext.disabled = (flashcardIndex === flashcardList.length - 1);
+}
+
+flashcardContainer.addEventListener('click', () => {
+    flashcardContainer.classList.toggle('flipped');
+});
+
+flashcardPrev.addEventListener('click', (e) => {
+    e.stopPropagation(); // 避免觸發翻轉
+    if (flashcardIndex > 0) {
+        flashcardIndex--;
+        loadFlashcard();
+    }
+});
+
+flashcardNext.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (flashcardIndex < flashcardList.length - 1) {
+        flashcardIndex++;
+        loadFlashcard();
+    }
+});
+
+flashcardShuffle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    startFlashcards(true);
 });
 
 /* =========================================
