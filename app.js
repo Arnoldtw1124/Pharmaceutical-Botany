@@ -702,6 +702,191 @@ const plantDictionary = [
         answer: "三角葉西番蓮",
         hint: "西番蓮科Passifloraceae\n多為草質或木質藤本，具腋生卷鬚，葉互生、常分裂。\n代表性特徵：花結構複雜且特殊，包含似時鐘之發達絲\n狀副花冠，果實通常為漿果（如百香果）。\n常見於熱帶與亞熱帶地區，具吸引昆蟲之豐富蜜腺。"
     },
+    {
+        id: 134,
+        answer: "單葉鐵線蓮,薄葉山蓼",
+        hint: "毛茛科Ranunculaceae\n多為一年或多年生草本，少數為木質藤本，且多數全株有毒。\n特徵：通常葉互生或基生且呈掌狀分裂，花多為兩性、輻射對稱，具多數雄、雌蕊，雄蕊呈螺旋狀排列。花萼常呈花瓣狀，果實多為蓇葖果或瘦果。\n常見者如毛茛、鐵線蓮、烏頭 （附子）等。"
+    },
+    {
+        id: 135,
+        answer: "鏽毛鐵線蓮",
+        hint: "毛茛科Ranunculaceae\n多為一年或多年生草本，少數為木質藤本，且多數全株有毒。\n特徵：通常葉互生或基生且呈掌狀分裂，花多為兩性、輻射對稱，具多數雄、雌蕊，雄蕊呈螺旋狀排列。花萼常呈花瓣狀，果實多為蓇葖果或瘦果。\n常見者如毛茛、鐵線蓮、烏頭 （附子）等。"
+    },
+    {
+        id: 136,
+        answer: "傅氏,台灣唐松草",
+        hint: "毛茛科Ranunculaceae\n多為一年或多年生草本，少數為木質藤本，且多數全株有毒。\n特徵：通常葉互生或基生且呈掌狀分裂，花多為兩性、輻射對稱，具多數雄、雌蕊，雄蕊呈螺旋狀排列。花萼常呈花瓣狀，果實多為蓇葖果或瘦果。\n常見者如毛茛、鐵線蓮、烏頭 （附子）等。"
+    },
+    {
+        id: 137,
+        answer: "南嶺蕘花,了哥王",
+        hint: "瑞香科Thymelaeaceae\n多為灌木或小喬木。\n顯著特徵：樹皮富含強韌的纖維、葉片全緣無托葉。花通常排成頭狀或總狀花序，萼筒狀（花冠狀）且無花瓣，花萼4-5裂，花盤常見。\n多數種類為單葉互生或對生。"
+    },
+    {
+        id: 138,
+        answer: "火炭母草",
+        hint: "蓼科Polygonaceae\n常為草本、藤本或灌木。\n主要特徵：莖節明顯膨大、葉片單一且互生，關鍵性識別特徵為葉柄基部具膜質或紙質的「托葉鞘」包莖。\n花多為小型的穗狀、總狀或圓錐花序，花被 3-6 片；果實為三稜形或凸鏡形的堅果。\n常見植物包括扛板歸、火炭母草、蓼藍。"
+    },
+    {
+        id: 139,
+        answer: "木藤蓼,康藏何首烏,山蕎麥",
+        hint: "蓼科Polygonaceae\n常為草本、藤本或灌木。\n主要特徵：莖節明顯膨大、葉片單一且互生，關鍵性識別特徵為葉柄基部具膜質或紙質的「托葉鞘」包莖。\n花多為小型的穗狀、總狀或圓錐花序，花被 3-6 片；果實為三稜形或凸鏡形的堅果。\n常見植物包括扛板歸、火炭母草、蓼藍。\n藤莖清熱解毒，調經止血，行氣消積"
+    },
+    {
+        id: 140,
+        answer: "天仙果",
+        hint: "桑科Moraceae\n主要特徵：全株具白色乳汁、單葉互生、托葉早落；花序小而密集成頭狀、穗狀或隱頭花序（如無花果）。\n多為喬木、灌木或藤本，廣泛分布於熱帶及亞熱帶。常見者如桑樹、榕樹、無花果、麵包樹等。"
+    },
+    {
+        id: 141,
+        answer: "菠蘿蜜",
+        hint: "桑科Moraceae\n主要特徵：全株具白色乳汁、單葉互生、托葉早落；花序小而密集成頭狀、穗狀或隱頭花序（如無花果）。\n多為喬木、灌木或藤本，廣泛分布於熱帶及亞熱帶。常見者如桑樹、榕樹、無花果、麵包樹等。"
+    },
+    {
+        id: 142,
+        answer: "絞股藍,七葉膽",
+        hint: "瓜科/葫蘆科Cucurbitaceae\n多為一年生蔓性草本，具攀緣捲鬚（側生於葉腋），莖細長且常具溝稜與粗毛。\n葉互生、具柄，多為掌狀淺裂或深裂。\n花單性、黃色、呈鐘狀，常見雌雄同株。子房下位，果實多為漿果（如瓜類），種子多數。"
+    },
+    {
+        id: 143,
+        answer: "番馬瓟",
+        hint: "番馬瓟(音薄)瓜科/葫蘆科Cucurbitaceae\n多為一年生蔓性草本，具攀緣捲鬚（側生於葉腋），莖細長且常具溝稜與粗毛。\n葉互生、具柄，多為掌狀淺裂或深裂。\n花單性、黃色、呈鐘狀，常見雌雄同株。子房下位，果實多為漿果（如瓜類），種子多數。"
+    },
+    {
+        id: 144,
+        answer: "波葉青牛膽,苦藤,寛筋藤,瘤莖藤",
+        hint: "防己科Menispermaceae\n多為攀緣或木質藤本。\n單葉互生、無托葉，常有掌狀脈。\n花單性，雌雄異株，排列成聚繖或圓錐花序；萼片通常6枚（2-4輪），花瓣6枚。\n果實為核果或核果狀，內果皮有皺紋，種子呈馬蹄或腎形。"
+    },
+    {
+        id: 145,
+        answer: "紅莧菜",
+        hint: "莧科Amaranthaceae\n多為一年生草本，適應性強。\n&#x20;特徵：莖直立或匍匐，節常膨大；葉互生或對生，全緣；花序以穗狀、頭狀或圓錐花序為主，花小且為膜質，常呈綠或紅紫色；常見果包在花被內，成熟時橫裂。\n常見者如莧菜、刺莧、青葙及千日紅。"
+    },
+    {
+        id: 146,
+        answer: "土人參",
+        hint: "馬齒莧科Portulacaceae\n多為肉質草本，莖葉肥厚多汁，適應乾旱環境，常見匍匐生長。\n典型特徵：單葉互生或對生，全緣；花兩性，具2枚萼片，花瓣早落常為5枚，雄蕊多數。\n果實為獨特的蓋裂蒴果，種子成熟時呈黑色"
+    },
+    {
+        id: 147,
+        answer: "白埔姜,揚波,駁骨丹",
+        hint: "馬錢科Loganiaceae\n主要為熱帶喬木、灌木或木質藤本。\n顯著特徵：葉對生，具明顯環狀托葉；花兩性且輻射對稱，常呈聚傘花序）、子房上位；漿果、蒴果或核果。\n許多種類全株有劇毒，如馬錢子含有番木鼈鹼等生物鹼。"
+    },
+    {
+        id: 148,
+        answer: "日本女貞",
+        hint: "木樨科Oleaceae\n常綠或落葉的灌木至小喬木，常見者如桂花、連翹、丁香、女貞及流蘇樹。\n葉對生且多為單葉，花4數（花萼與花冠通常4裂）以及僅有2枚雄蕊的顯著特徵。\n花多帶有濃郁芳香，如桂花，且果實多為核果、蒴果或翅果"
+    },
+    {
+        id: 149,
+        answer: "桂花,木樨",
+        hint: "木樨科Oleaceae\n常綠或落葉的灌木至小喬木，常見者如桂花、連翹、丁香、女貞及流蘇樹。\n葉對生且多為單葉，花4數（花萼與花冠通常4裂）以及僅有2枚雄蕊的顯著特徵。\n花多帶有濃郁芳香，如桂花，且果實多為核果、蒴果或翅果"
+    },
+    {
+        id: 150,
+        answer: "流蘇",
+        hint: "木樨科Oleaceae\n常綠或落葉的灌木至小喬木，常見者如桂花、連翹、丁香、女貞及流蘇樹。\n葉對生且多為單葉，花4數（花萼與花冠通常4裂）以及僅有2枚雄蕊的顯著特徵。\n花多帶有濃郁芳香，如桂花，且果實多為核果、蒴果或翅果\n木材:堅重細䉠緻，製作算盤，嫩葉當茶"
+    },
+    {
+        id: 151,
+        answer: "臭杏,土荊芥",
+        hint: "藜科Chenopodiaceae\n通常為一年生或多年生草本、灌木，常見於鹽鹼地。\n主要特徵：全株常具綠白色粉霜（泡狀毛）、莖葉肉質、葉互生無托葉。\n花極小、單被（無花瓣）、綠色且為穗狀或圓錐花序；果實為胞果，包藏在宿存花萼內。"
+    },
+    {
+        id: 152,
+        answer: "銅錘玉帶草,普刺特草",
+        hint: "桔梗科Campanulaceae\n桔梗科植物多為多年生草本，全株含有無毒的白色乳汁，葉片多呈互生且無托葉。其典型特徵為鐘形或漏斗狀的合瓣花，常見藍色、紫色或白色，花冠五裂。果實多為蒴果，在成熟時會裂開釋放細小種子。"
+    },
+    {
+        id: 153,
+        answer: "翼核木",
+        hint: "鼠李科Rhamnaceae\n鼠李科植物多為喬木、灌木或藤本，具顯著特徵包括常有刺、單葉互生（或對生）且葉脈通常具有 3 條基出脈（三出脈）。花朵小而黃綠色，常見 4-5 基數，花瓣與雄蕊對生且常包藏於花瓣中。果實多為核果（如棗、鼠李）或翅果，普遍分佈於溫帶與熱帶地區。"
+    },
+    {
+        id: 154,
+        answer: "金絲草,筆仔草",
+        hint: "禾本科Graminae/ Poaceae\n禾本科植物主要特徵為稈（莖）呈圓柱形或扁平、中空有節，葉片狹長互生，具「葉鞘」、「葉舌」構造，花微小並組成「小穗」（spikelet），風力傳粉，果實為穎果。多為一年生或多年生草本，普遍有地下走莖，能大量繁殖成片，主要代表包括水稻、小麥、玉米、五節芒及多種草坪草。\n消炎解熱利尿"
+    },
+    {
+        id: 155,
+        answer: "崗梅,燈稱花,萬點金",
+        hint: "冬青科Aquifoliaceae\n冬青科植物主要為常綠喬木或灌木（少數落葉），以其在寒冬依然青翠而得名。特徵為單葉互生、革質（表面光亮）、葉緣常有鋸齒或刺齒，花小且多為單性異株，通常腋生簇生，花瓣4-6片，成熟果實為鮮紅至黑色的核果，具備顯著的觀賞價值與耐陰性。\n根清熱解毒活血生津，葉亦具清熱解毒功效為涼茶原料之一"
+    },
+    {
+        id: 156,
+        answer: "銀杏,公孫樹",
+        hint: "銀杏科Ginkgoaceae\n銀杏科屬裸子植物，僅存一屬一種（銀杏），被譽為「活化石」。其主要特徵為高大落葉喬木、生長緩慢、雌雄異株，具有獨特的扇形葉片與二叉狀脈。秋季葉片轉為金黃，成熟種子（白果）具肉質外種皮，適應力強且長壽。"
+    },
+    {
+        id: 157,
+        answer: "馬蹄金",
+        hint: "旋花科Convolvulaceae\n旋花科植物通常具有纏繞性或匍匐性的草質藤本莖，許多種類莖葉折斷後有白色乳汁。其核心特徵為：單葉互生且無托葉，花大而明顯，多為腋生的漏斗狀或鐘狀合瓣花（花冠在花苞時期有顯著的扭曲/旋卷狀），子房上位，蒴果。常見的包括牽牛花、番薯及馬鞍藤。"
+    },
+    {
+        id: 158,
+        answer: "落地生根",
+        hint: "景天科Crassulaceae\n景天科植物多為多年生肉質草本或低矮灌木，以肥厚多汁的葉片與莖為顯著特徵，具備極強的耐旱與無性繁殖能力（如落地生根）。葉片多互生、對生或輪生，常呈現緊密蓮座狀。花朵為聚繖花序、輻射對稱，多為5數花（花瓣/萼片5枚），常見花色有紅、黃、白等。"
+    },
+    {
+        id: 159,
+        answer: "使君子",
+        hint: "使君子科Combretaceae\n使君子科植物多為熱帶常綠或落葉喬木、灌木，部分為木質藤本，以枝條具鏽色柔毛、葉片全緣對生、花萼管狀且花瓣顏色由白轉紅、具五稜狀核果為主要特徵。其花具香氣且多呈倒掛狀，成熟果實可作驅蟲藥。\n果實驅蟲藥效成分 : Quisqualic acid"
+    },
+    {
+        id: 160,
+        answer: "由跋",
+        hint: "天南星科Araceae\n天南星科植物最鮮明的特徵是「佛焰花序」，即肉穗花序外包一個大型苞片（佛焰苞），且花通常無花被。它們多為草本，具塊莖或根莖，常有白色乳汁且有毒性（針晶），葉片通常較大。許多種類是常見的室內觀葉植物，例如黃金葛、海芋、龜背芋、姑婆芋等。"
+    },
+    {
+        id: 161,
+        answer: "(單瓣)山茶",
+        hint: "山茶科Theaceae\n山茶科植物多為常綠喬木或灌木，具單葉、互生、革質特徵，葉緣常有細鋸齒。花朵單生或簇生，通常兩性，花萼與花瓣各5枚（或更多），雄蕊甚多。最顯著特徵是果實多為木質的開裂蒴果，且多數種類花謝時連同花萼整朵掉落。"
+    },
+    {
+        id: 162,
+        answer: "厚皮香",
+        hint: "山茶科Theaceae\n山茶科植物多為常綠喬木或灌木，具單葉、互生、革質特徵，葉緣常有細鋸齒。花朵單生或簇生，通常兩性，花萼與花瓣各5枚（或更多），雄蕊甚多。最顯著特徵是果實多為木質的開裂蒴果，且多數種類花謝時連同花萼整朵掉落。\n庭木之王(日本):松、全緣冬青、厚皮香"
+    },
+    {
+        id: 163,
+        answer: "黑星紫金牛",
+        hint: "紫金牛科/報春花科Myrsinaceae/Primulaceae\n紫金牛科植物以常綠灌木或小喬木為主，特徵為單葉互生（具油腺點）、花小且常具腺點、合瓣花、雄蕊與花瓣對生、果實為紅色或黑色漿果/核果。常生於低海拔林下，包含硃砂根、黑星紫金牛（鐵雨傘）等，具觀賞與藥用價值，部分分類系統已將其歸入報春花科。"
+    },
+    {
+        id: 164,
+        answer: "朱砂根",
+        hint: "紫金牛科/報春花科Myrsinaceae/Primulaceae\n紫金牛科植物以常綠灌木或小喬木為主，特徵為單葉互生（具油腺點）、花小且常具腺點、合瓣花、雄蕊與花瓣對生、果實為紅色或黑色漿果/核果。常生於低海拔林下，包含硃砂根、黑星紫金牛（鐵雨傘）等，具觀賞與藥用價值，部分分類系統已將其歸入報春花科。"
+    },
+    {
+        id: 165,
+        answer: "台灣山桂花",
+        hint: "紫金牛科Myrsinaceae\n紫金牛科植物以常綠灌木或小喬木為主，特徵為單葉互生（具油腺點）、花小且常具腺點、合瓣花、雄蕊與花瓣對生、果實為紅色或黑色漿果/核果。常生於低海拔林下，包含硃砂根、黑星紫金牛（鐵雨傘）等，具觀賞與藥用價值，部分分類系統已將其歸入報春花科。"
+    },
+    {
+        id: 166,
+        answer: "水丁香",
+        hint: "柳葉菜科Onagraceae\n柳葉菜科植物多為草本，具單葉對生或互生、無托葉。顯著特徵為兩性花多為「四數花」（花萼4裂、花瓣4枚，通常凹頭）、子房下位，花粉常具黏絲。果實多為蒴果（如水丁香的香蕉狀蒴果），且種子常具白色絲狀毛以利傳播，分布廣泛，性喜潮濕環境。"
+    },
+    {
+        id: 167,
+        answer: "紅蕚檾麻",
+        hint: "錦葵科Malvaceae\n主要特徵:「單體雄蕊」（雄蕊筒）、「單葉互生且常具掌狀脈」、「全株多星狀毛或絨毛」。\n葉柄基部通常有托葉；花朵單生或簇生、花瓣 5 枚，且常見副萼。\n廣義錦葵科包含原木棉科、梧桐科和田麻科，多為經濟作物或庭園觀賞植物。\n紅蕚苘麻，蔓性風鈴花，紅燈龍花"
+    },
+    {
+        id: 168,
+        answer: "蜀葵",
+        hint: "錦葵科Malvaceae\n主要特徵:「單體雄蕊」（雄蕊筒）、「單葉互生且常具掌狀脈」、「全株多星狀毛或絨毛」。\n葉柄基部通常有托葉；花朵單生或簇生、花瓣 5 枚，且常見副萼。\n廣義錦葵科包含原木棉科、梧桐科和田麻科，多為經濟作物或庭園觀賞植物。\n紅蕚苘麻，蔓性風鈴花，紅燈龍花\nHollyhock"
+    },
+    {
+        id: 169,
+        answer: "石竹",
+        hint: "石竹科Caryophyllaceae\n石竹科植物主要為一年生或多年生草本，最顯著特徵為節部膨大、單葉對生（基部常合生）以及花瓣常有爪（細長基部）。花多為聚傘花序，花瓣通常5枚，頂端常具齒裂或撕裂狀，果實為蒴果。此科植物廣泛分佈於北溫帶，常見石竹、繁縷、瞿麥等，具高觀賞及藥用價值。\nChina pink"
+    },
+    {
+        id: 170,
+        answer: "雞腸草,鵝兒腸",
+        hint: "石竹科Caryophyllaceae\n石竹科植物主要為一年生或多年生草本，最顯著特徵為節部膨大、單葉對生（基部常合生）以及花瓣常有爪（細長基部）。花多為聚傘花序，花瓣通常5枚，頂端常具齒裂或撕裂狀，果實為蒴果。此科植物廣泛分佈於北溫帶，常見石竹、繁縷、瞿麥等，具高觀賞及藥用價值。"
+    },
 ];
 
 // 元素選取
@@ -727,7 +912,7 @@ function showScreen(screenEl) {
 backBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         // 如果在計時器中，需清除計時器
-        if(timerInterval) clearInterval(timerInterval);
+        if (timerInterval) clearInterval(timerInterval);
         showScreen(homeScreen);
     });
 });
@@ -747,7 +932,7 @@ function startDictation() {
     // 隨機抽取 15 題
     const shuffled = [...familyData].sort(() => 0.5 - Math.random());
     currentDictationQuestions = shuffled.slice(0, 15);
-    
+
     // 渲染題目
     dictationList.innerHTML = '';
     currentDictationQuestions.forEach((q, index) => {
@@ -760,7 +945,7 @@ function startDictation() {
         `;
         dictationList.appendChild(item);
     });
-    
+
     showScreen(dictationScreen);
 }
 
@@ -768,15 +953,15 @@ submitDictationBtn.addEventListener('click', () => {
     let correctCount = 0;
     const results = [];
     const inputs = document.querySelectorAll('.question-input');
-    
+
     inputs.forEach(input => {
         const idx = input.getAttribute('data-index');
         const answer = input.value.trim();
         const correctAnswer = currentDictationQuestions[idx].latin;
-        
+
         let isCorrect = (answer.toLowerCase() === correctAnswer.toLowerCase());
         if (isCorrect) correctCount++;
-        
+
         results.push({
             prompt: currentDictationQuestions[idx].chinese,
             userAnswer: answer || '(未填寫)',
@@ -784,7 +969,7 @@ submitDictationBtn.addEventListener('click', () => {
             isCorrect: isCorrect
         });
     });
-    
+
     showResults(correctCount, 15, results, 'dictation');
 });
 
@@ -815,27 +1000,27 @@ function startFlashcards(shuffle = true) {
         flashcardList.sort(() => 0.5 - Math.random());
     }
     flashcardIndex = 0;
-    
+
     // 確保卡片未翻轉
     flashcardContainer.classList.remove('flipped');
-    
+
     showScreen(flashcardScreen);
     loadFlashcard();
 }
 
 function loadFlashcard() {
     if (flashcardList.length === 0) return;
-    
+
     const activePlant = flashcardList[flashcardIndex];
     flashcardProgress.textContent = `第 ${flashcardIndex + 1} / ${flashcardList.length} 張`;
-    
+
     // 每次切換都強制翻回正面
     flashcardContainer.classList.remove('flipped');
-    
+
     // 處理正面圖片
     flashcardImage.style.display = 'none';
     flashcardPlaceholder.style.display = 'flex';
-    
+
     const imgUrl = `images/${activePlant.answer}.png`;
     flashcardImage.src = imgUrl;
     flashcardImage.onload = () => {
@@ -846,7 +1031,7 @@ function loadFlashcard() {
         flashcardImage.style.display = 'none';
         flashcardPlaceholder.style.display = 'flex';
     };
-    
+
     // 處理背面文字
     flashcardName.textContent = activePlant.answer;
     const parentHintBox = flashcardHint.parentElement;
@@ -856,7 +1041,7 @@ function loadFlashcard() {
     } else {
         parentHintBox.style.display = 'none';
     }
-    
+
     // 更新按鈕狀態
     flashcardPrev.disabled = (flashcardIndex === 0);
     flashcardNext.disabled = (flashcardIndex === flashcardList.length - 1);
@@ -912,15 +1097,15 @@ btnIdentification.addEventListener('click', () => {
 function startIdentification() {
     plantCurrentIndex = 0;
     plantAnswers = [];
-    
+
     // 獲取選擇的測驗題數
     const selectEl = document.getElementById('plant-num-select');
     selectedPlantCount = parseInt(selectEl.value, 10);
-    
+
     // 隨機抽取指定數量的植物
     const shuffled = [...plantDictionary].sort(() => 0.5 - Math.random());
     currentIdentificationQuestions = shuffled.slice(0, selectedPlantCount);
-    
+
     showScreen(identificationScreen);
     loadPlantQuestion();
 }
@@ -930,17 +1115,17 @@ function loadPlantQuestion() {
         finishIdentification();
         return;
     }
-    
+
     // 初始化畫面與倒數
     timeLeft = TIME_LIMIT;
     currentQuestionNum.textContent = `第 ${plantCurrentIndex + 1} / ${currentIdentificationQuestions.length} 題`;
     updateTimerUI();
-    
+
     const activePlant = currentIdentificationQuestions[plantCurrentIndex];
-    
+
     plantImage.style.display = 'none';
     imagePlaceholder.style.display = 'flex';
-    
+
     // 改為根據中文答案去抓取同名的 png 圖片 (例如：當歸.png)
     const imgUrl = `images/${activePlant.answer}.png`;
     plantImage.src = imgUrl;
@@ -953,14 +1138,14 @@ function loadPlantQuestion() {
         plantImage.style.display = 'none';
         imagePlaceholder.style.display = 'flex';
     };
-    
+
     // 生成這題的選項 (1個正確, 9個錯誤)
     let options = [activePlant.answer];
     let others = plantDictionary.map(p => p.answer).filter(a => a !== activePlant.answer);
     others.sort(() => 0.5 - Math.random());
     options = options.concat(others.slice(0, 9));
     options.sort(() => 0.5 - Math.random()); // 再次打亂
-    
+
     optionsContainer.innerHTML = '';
     options.forEach(opt => {
         const btn = document.createElement('button');
@@ -969,7 +1154,7 @@ function loadPlantQuestion() {
         btn.onclick = () => handleOptionClick(btn, opt, activePlant);
         optionsContainer.appendChild(btn);
     });
-    
+
     // 開始計時
     if (timerInterval) clearInterval(timerInterval);
     timerInterval = setInterval(() => {
@@ -985,7 +1170,7 @@ function updateTimerUI() {
     timerText.textContent = `${timeLeft}s`;
     let pct = (timeLeft / TIME_LIMIT) * 100;
     timerBar.style.width = `${pct}%`;
-    
+
     timerBar.className = 'timer-bar'; // reset class
     if (timeLeft <= 10) {
         timerBar.classList.add(timeLeft <= 5 ? 'danger' : 'warning');
@@ -994,10 +1179,10 @@ function updateTimerUI() {
 
 function handleOptionClick(clickedBtn, selectedAnswer, activePlant) {
     if (timerInterval) clearInterval(timerInterval); // 停止計時
-    
+
     const allBtns = optionsContainer.querySelectorAll('.option-btn');
     allBtns.forEach(b => b.disabled = true);
-    
+
     // 僅給予視覺上的選取回饋，不提示對錯
     clickedBtn.classList.add('selected');
 
@@ -1010,7 +1195,7 @@ function handleOptionClick(clickedBtn, selectedAnswer, activePlant) {
         correctAnswer: activePlant.answer,
         isCorrect: isCorrect
     });
-    
+
     // 稍微延遲讓學生知道自己按了什麼，接著迅速下一題
     setTimeout(() => {
         plantCurrentIndex++;
@@ -1020,20 +1205,20 @@ function handleOptionClick(clickedBtn, selectedAnswer, activePlant) {
 
 function handleTimeout(activePlant) {
     if (timerInterval) clearInterval(timerInterval);
-    
+
     const allBtns = optionsContainer.querySelectorAll('.option-btn');
     allBtns.forEach(b => b.disabled = true);
-    
+
     // 不給予提示對錯，直接計為未作答
     plantAnswers.push({
         id: activePlant.id,
         hint: activePlant.hint,
-        prompt: `圖片 ${activePlant.id}`, 
+        prompt: `圖片 ${activePlant.id}`,
         userAnswer: '(未作答)',
         correctAnswer: activePlant.answer,
         isCorrect: false
     });
-    
+
     // 時間到直接跳轉，不需要延遲太久
     setTimeout(() => {
         plantCurrentIndex++;
@@ -1056,22 +1241,22 @@ const resultsList = document.getElementById('results-list');
 function showResults(score, total, resultsData, type) {
     const accuracy = Math.round((score / total) * 100) || 0;
     finalScore.innerHTML = `${score} / ${total} <div style="font-size: 1.5rem; color:#94a3b8; margin-top: 0.5rem">正確率: ${accuracy}%</div>`;
-    
+
     resultsList.innerHTML = '';
     resultsData.forEach(item => {
         const div = document.createElement('div');
         div.className = `result-item ${item.isCorrect === true ? 'correct' : (item.isCorrect === false ? 'incorrect' : '')}`;
-        
+
         let answerHtml = '';
         if (item.isCorrect === false) {
-             answerHtml = `<span class="result-answer wrong">${item.userAnswer}</span> <span class="result-correct-answer">${item.correctAnswer}</span>`;
+            answerHtml = `<span class="result-answer wrong">${item.userAnswer}</span> <span class="result-correct-answer">${item.correctAnswer}</span>`;
         } else if (item.isCorrect === true) {
-             answerHtml = `<span class="result-answer" style="color: var(--success-color);">${item.userAnswer}</span>`;
+            answerHtml = `<span class="result-answer" style="color: var(--success-color);">${item.userAnswer}</span>`;
         } else {
-             // 待批改模式
-             answerHtml = `<span class="result-answer">${item.userAnswer}</span>`;
+            // 待批改模式
+            answerHtml = `<span class="result-answer">${item.userAnswer}</span>`;
         }
-        
+
         let iconHtml = '';
         if (item.isCorrect === true) iconHtml = '<span class="status-icon">✅</span>';
         else if (item.isCorrect === false) iconHtml = '<span class="status-icon">❌</span>';
@@ -1091,7 +1276,7 @@ function showResults(score, total, resultsData, type) {
             <div style="flex:1">${answerHtml}</div>
             ${iconHtml}
         `;
-        
+
         if (type === 'identification') {
             div.classList.add('clickable');
             div.title = "點擊查看詳解";
@@ -1099,10 +1284,10 @@ function showResults(score, total, resultsData, type) {
                 showReviewModal(item);
             });
         }
-        
+
         resultsList.appendChild(div);
     });
-    
+
     showScreen(resultsScreen);
 }
 
@@ -1123,17 +1308,17 @@ function showReviewModal(item) {
     // 檢討時一併抓取中文名的對應圖片
     reviewImage.src = `images/${item.correctAnswer}.png`;
     reviewImage.onerror = () => { reviewImage.src = ''; }; // 處理找不到圖片的情境
-    
+
     reviewYourAnswer.innerHTML = `<strong>您的答案：</strong> <span class="${item.isCorrect ? '' : 'wrong'}">${item.userAnswer}</span>`;
     reviewCorrectAnswer.innerHTML = `<strong>正確答案：</strong> <span class="result-correct-answer">${item.correctAnswer}</span>`;
-    
+
     if (item.hint && item.hint.trim() !== '') {
         reviewHintText.innerHTML = item.hint.replace(/\n/g, '<br>');
         reviewHintBox.style.display = 'block';
     } else {
         reviewHintBox.style.display = 'none';
     }
-    
+
     reviewModal.classList.add('active');
 }
 
