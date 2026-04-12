@@ -991,10 +991,13 @@ const flashcardTitle = document.getElementById('flashcard-title');
 const flashcardProgress = document.getElementById('flashcard-progress');
 const flashcardContainer = document.getElementById('flashcard-container');
 const flashcardImage = document.getElementById('flashcard-image');
+const flashcardBack = document.getElementById('flashcard-back');
 const flashcardFrontText = document.getElementById('flashcard-front-text');
+const flashcardBackText = document.getElementById('flashcard-back-text');
 const flashcardPlaceholder = document.getElementById('flashcard-placeholder');
 const flashcardName = document.getElementById('flashcard-name');
 const flashcardHint = document.getElementById('flashcard-hint');
+const flashcardHintBox = document.getElementById('flashcard-hint-box');
 const flashcardPrev = document.getElementById('flashcard-prev');
 const flashcardNext = document.getElementById('flashcard-next');
 const flashcardShuffle = document.getElementById('flashcard-shuffle');
@@ -1063,19 +1066,33 @@ function loadFlashcard() {
     }
 
     // 處理背面文字
-    const parentHintBox = flashcardHint.parentElement;
     if (flashcardMode === 'plant') {
+        flashcardBackText.style.display = 'none';
+        flashcardName.style.display = 'block';
         flashcardName.textContent = activeCard.answer;
+        
+        flashcardBack.style.alignItems = 'flex-start';
+        flashcardBack.style.justifyContent = 'flex-start';
+        flashcardBack.style.textAlign = 'left';
+
         if (activeCard.hint && activeCard.hint.trim() !== '') {
             flashcardHint.innerHTML = activeCard.hint.replace(/\n/g, '<br>');
-            parentHintBox.style.display = 'block';
+            flashcardHintBox.style.display = 'block';
         } else {
-            parentHintBox.style.display = 'none';
+            flashcardHintBox.style.display = 'none';
         }
     } else {
-        // 科別單字卡背面顯示拉丁科名
-        flashcardName.textContent = activeCard.latin;
-        parentHintBox.style.display = 'none';
+        // 科別單字卡背面顯示拉丁科名 (置中白字)
+        flashcardName.style.display = 'none';
+        flashcardHintBox.style.display = 'none';
+        
+        flashcardBackText.style.display = 'block';
+        flashcardBackText.textContent = activeCard.latin;
+        
+        // 置中樣式
+        flashcardBack.style.alignItems = 'center';
+        flashcardBack.style.justifyContent = 'center';
+        flashcardBack.style.textAlign = 'center';
     }
 
     // 更新按鈕狀態
