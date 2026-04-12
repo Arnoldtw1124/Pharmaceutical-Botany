@@ -908,7 +908,8 @@ const identificationScreen = document.getElementById('identification-screen');
 const resultsScreen = document.getElementById('results-screen');
 
 // 首頁按鈕
-const btnFlashcard = document.getElementById('btn-flashcard');
+const btnFlashcardPlant = document.getElementById('btn-flashcard-plant');
+const btnFlashcardFamily = document.getElementById('btn-flashcard-family');
 const btnDictation = document.getElementById('btn-dictation');
 const btnIdentification = document.getElementById('btn-identification');
 const backBtns = document.querySelectorAll('.back-btn');
@@ -986,9 +987,11 @@ submitDictationBtn.addEventListener('click', () => {
 /* =========================================
    模式 1.5: 植物單字卡學習 (Flashcards)
 ========================================= */
+const flashcardTitle = document.getElementById('flashcard-title');
 const flashcardProgress = document.getElementById('flashcard-progress');
 const flashcardContainer = document.getElementById('flashcard-container');
 const flashcardImage = document.getElementById('flashcard-image');
+const flashcardFrontText = document.getElementById('flashcard-front-text');
 const flashcardPlaceholder = document.getElementById('flashcard-placeholder');
 const flashcardName = document.getElementById('flashcard-name');
 const flashcardHint = document.getElementById('flashcard-hint');
@@ -998,14 +1001,22 @@ const flashcardShuffle = document.getElementById('flashcard-shuffle');
 
 let flashcardList = [];
 let flashcardIndex = 0;
+let flashcardMode = 'plant'; // 'plant' 或 'family'
 
-btnFlashcard.addEventListener('click', () => {
-    startFlashcards(true);
+btnFlashcardPlant.addEventListener('click', () => {
+    startFlashcards('plant', true);
 });
 
-function startFlashcards(shuffle = true) {
-    // 複製題庫
-    flashcardList = [...plantDictionary];
+btnFlashcardFamily.addEventListener('click', () => {
+    startFlashcards('family', true);
+});
+
+function startFlashcards(mode = 'plant', shuffle = true) {
+    flashcardMode = mode;
+    flashcardTitle.textContent = mode === 'plant' ? '植物單字卡' : '科別單字卡';
+    
+    // 複製對應題庫
+    flashcardList = mode === 'plant' ? [...plantDictionary] : [...familyData];
     if (shuffle) {
         flashcardList.sort(() => 0.5 - Math.random());
     }
@@ -1021,34 +1032,49 @@ function startFlashcards(shuffle = true) {
 function loadFlashcard() {
     if (flashcardList.length === 0) return;
 
-    const activePlant = flashcardList[flashcardIndex];
+    const activeCard = flashcardList[flashcardIndex];
     flashcardProgress.textContent = `第 ${flashcardIndex + 1} / ${flashcardList.length} 張`;
 
     // 每次切換都強制翻回正面
     flashcardContainer.classList.remove('flipped');
 
-    // 處理正面圖片
-    flashcardImage.style.display = 'none';
-    flashcardPlaceholder.style.display = 'flex';
-
-    const imgUrl = `images/${activePlant.answer}.png`;
-    flashcardImage.src = imgUrl;
-    flashcardImage.onload = () => {
-        flashcardImage.style.display = 'block';
-        flashcardPlaceholder.style.display = 'none';
-    };
-    flashcardImage.onerror = () => {
+    // 處理正面
+    if (flashcardMode === 'plant') {
+        flashcardFrontText.style.display = 'none';
         flashcardImage.style.display = 'none';
         flashcardPlaceholder.style.display = 'flex';
-    };
+
+        const imgUrl = `images/${activeCard.answer}.png`;
+        flashcardImage.src = imgUrl;
+        flashcardImage.onload = () => {
+            flashcardImage.style.display = 'block';
+            flashcardPlaceholder.style.display = 'none';
+        };
+        flashcardImage.onerror = () => {
+            flashcardImage.style.display = 'none';
+            flashcardPlaceholder.style.display = 'flex';
+        };
+    } else {
+        // 科別單字卡正面顯示中文科名
+        flashcardImage.style.display = 'none';
+        flashcardPlaceholder.style.display = 'none';
+        flashcardFrontText.style.display = 'block';
+        flashcardFrontText.textContent = activeCard.chinese;
+    }
 
     // 處理背面文字
-    flashcardName.textContent = activePlant.answer;
     const parentHintBox = flashcardHint.parentElement;
-    if (activePlant.hint && activePlant.hint.trim() !== '') {
-        flashcardHint.innerHTML = activePlant.hint.replace(/\n/g, '<br>');
-        parentHintBox.style.display = 'block';
+    if (flashcardMode === 'plant') {
+        flashcardName.textContent = activeCard.answer;
+        if (activeCard.hint && activeCard.hint.trim() !== '') {
+            flashcardHint.innerHTML = activeCard.hint.replace(/\n/g, '<br>');
+            parentHintBox.style.display = 'block';
+        } else {
+            parentHintBox.style.display = 'none';
+        }
     } else {
+        // 科別單字卡背面顯示拉丁科名
+        flashcardName.textContent = activeCard.latin;
         parentHintBox.style.display = 'none';
     }
 
@@ -1079,7 +1105,7 @@ flashcardNext.addEventListener('click', (e) => {
 
 flashcardShuffle.addEventListener('click', (e) => {
     e.stopPropagation();
-    startFlashcards(true);
+    startFlashcards(flashcardMode, true);
 });
 
 /* =========================================
